@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -56,7 +56,7 @@
                             INGRESAR
                         </button>
 
-                        <!-- BUTTON: INDEX (GitHub Pages) -->
+                        <!-- BUTTON: INDEX -> apunta a tu GitHub Pages (URL absoluta) -->
                         <button type="button"
                             onclick="window.location.href='https://bustillod850.github.io/'"
                             class="w-full bg-white text-black font-bold py-3 px-4 rounded-full hover:bg-gray-300 transition duration-300 ease-in-out transform hover:scale-105">
@@ -67,9 +67,11 @@
                         <button type="button"
                             onclick="window.open('https://wa.me/521234567890?text=Hola,%20necesito%20ayuda%20desde%20la%20app', '_blank')"
                             class="w-full bg-green-400 text-black font-bold py-3 px-4 rounded-full hover:bg-green-300 transition duration-300 ease-in-out transform hover:scale-105 flex items-center justify-center">
-
-                            <svg width="26" height="26" fill="currentColor" class="mr-2">
-                                <path d="M... (icon shortened for clarity) ..." />
+                            
+                            <!-- WhatsApp Icon (SVG funcional) -->
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="26" height="26" fill="currentColor" class="mr-2">
+                                <path d="M20.52 3.48A11.94 11.94 0 0 0 12 0C5.37 0 .01 5.36.01 12a11.86 11.86 0 0 0 1.78 6.04L0 24l6.12-1.74A11.94 11.94 0 0 0 12 24c6.63 0 12-5.36 12-12 0-3.2-1.24-6.2-3.48-8.52zM12 21.5c-1.75 0-3.42-.5-4.87-1.44l-.35-.22-3.64 1.04 1-3.55-.23-.36A9.47 9.47 0 0 1 2.5 12C2.5 7.0 6.0 3.5 11.99 3.5 17.98 3.5 21.5 7.0 21.5 12c0 5-3.52 9.5-9.5 9.5z"/>
+                                <path d="M17.3 14.02c-.27-.14-1.6-.79-1.85-.88-.25-.09-.43-.14-.61.14-.18.27-.71.88-.87 1.06-.16.18-.32.21-.59.07-.27-.14-1.14-.42-2.17-1.34-.8-.71-1.34-1.6-1.5-1.87-.16-.27-.02-.42.12-.56.12-.11.27-.3.41-.45.14-.15.18-.27.27-.45.09-.18.05-.34-.02-.48-.07-.14-.61-1.47-.84-2.01-.22-.53-.45-.46-.61-.47-.16-.01-.34-.01-.52-.01s-.48.07-.73.34c-.25.27-.96.94-.96 2.3s.98 2.66 1.12 2.84c.14.18 1.93 2.95 4.67 4.13 1.3.56 2.32.9 3.11 1.15 1.31.38 2.5.33 3.44.2.99-.14 1.6-1.01 1.83-1.98.23-.97.23-1.8.16-1.98-.07-.18-.27-.27-.54-.41z"/>
                             </svg>
 
                             CONTACTAR POR WHATSAPP
@@ -90,6 +92,7 @@
             const passCorrecta = "12345";
 
             if (email === userCorrecto && pass === passCorrecta) {
+                // si prefieres abrir vista1.html en otra pestaña usa window.open(...)
                 window.location.href = "vista1.html";
                 return false;
             } else {
